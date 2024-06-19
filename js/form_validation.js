@@ -18,8 +18,6 @@ $(document).ready(function () {
     inputCorreo: false,
     inputCelular: false,
     inputCuidad: false,
-    // checkboxAcepto: false,
-    // inputGenero: false
   };
 
   const validateField = (expression, input, field) => {
@@ -53,26 +51,6 @@ $(document).ready(function () {
     }
   };
 
-  // const validarCheckbox = (input, field) => {
-  //     if ($(input).is(':checked')) {
-  //         $(`#${field}`).addClass('is-valid').removeClass('is-invalid');
-  //         fields[field] = true;
-  //     } else {
-  //         $(`#${field}`).addClass('is-invalid').removeClass('is-valid');
-  //         fields[field] = false;
-  //     }
-  // };
-
-  // const validarRadioButtons = (field) => {
-  //     if ($(`input[name="${field}"]:checked`).length > 0) {
-  //         $(`#${field}`).addClass('is-valid').removeClass('is-invalid');
-  //         fields[field] = true;
-  //     } else {
-  //         $(`#${field}`).addClass('is-invalid').removeClass('is-valid');
-  //         fields[field] = false;
-  //     }
-  // };
-
   const validarFormulario = (e) => {
     e.preventDefault();
     const target = e.target;
@@ -100,12 +78,6 @@ $(document).ready(function () {
       case "inputCuidad":
         validateCity(target, "inputCuidad")
         break;
-      // case "checkboxAcepto":
-      //     validarCheckbox(target, 'checkboxAcepto');
-      //     break;
-      // case "inputGenero":
-      //     validarRadioButtons('inputGenero');
-      //     break;
     }
 
     if (fields["inputUsuario"] && fields["inputNombre"] && fields["inputContrasena"] && fields["inputRepetirContrasena"] && fields["inputCorreo"] && fields["inputCelular"] &&
@@ -118,8 +90,6 @@ $(document).ready(function () {
 
   $("#formulario input").on("blur", validarFormulario);
   $("#formulario select").on("blur", validarFormulario);
-  // $('#formulario input[type="checkbox"]').on("change", validarFormulario);
-  // $('#formulario input[name="inputGenero"]').on("change", validarFormulario);
 
   $(`#botonEnviar`).click(function(event){
     event.preventDefault();
