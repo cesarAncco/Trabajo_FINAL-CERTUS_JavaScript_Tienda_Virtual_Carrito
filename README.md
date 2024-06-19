@@ -1,2 +1,2 @@
 # Trabajo_FINAL-CERTUS_JavaScript_Tienda_Virtual_Carrito
-Repositorio para el trabajo final del curso de Desarrollo FrontEnd de Certus, en la cual consta de poder hacer una Tienda Virtual donde haya un catalogo y un Carrito de Compras empleando JavaScript.
+Repositorio para el trabajo final del curso de Desarrollo FrontEnd de Certus, en la cual consta de poder hacer una Tienda Virtual donde haya un catalogo y un Carrito de Compras empleando JavaScript. Este es un nuevo repositorio del anterior modulo (en el anterior repositorio ya se estuvo haciendo las mejoras), este es el link del repositorio anterior https://github.com/cesarAncco/Trabajo_FINAL-CERTUS_Tienda_Virtual_Carrito
