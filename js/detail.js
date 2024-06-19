@@ -6,7 +6,7 @@ $(document).ready(function () {
       $("#product-img").attr("src", product.img);
       $("#product-title").text(product.title);
       $("#product-price").text(`Precio : S/ ${product.price}`);
-      $("#product-store").text(`Tienda : S/ ${product.store}`);
+      $("#product-store").text(`Tienda : ${product.store}`);
     }
   });
 });
